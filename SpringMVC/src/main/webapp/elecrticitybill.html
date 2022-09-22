@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>electricity bill</title>
+        <script>
+            function mainpage(){
+                location.href = "CardPayment.html";
+            }
+    window.addEventListener('DOMContentLoaded',()=>{
+
+    document.querySelector('#s1').addEventListener('blur',()=>{
+    document.querySelector('#t1').disabled = false;
+
+    document.querySelector('#t1').addEventListener('blur',()=>{
+        document.querySelector('#t2').disabled = false;
+    });
+    document.querySelector('#t2').addEventListener('blur',()=>{
+        document.querySelector('#s2').disabled = false;
+    });
+    document.querySelector('#s2').addEventListener('blur',()=>{
+        document.querySelector('#btn').disabled = false;
+    });
+});
+});
+        </Script>
+        <style>
+            button{
+                color: black;
+                background-color:lightgray;
+                width: 250px;
+                height:40px;
+                border-radius: 5px;
+                box-shadow: 4px 4px black;
+            }
+            button:hover{
+                background-color: aliceblue;
+                color: black;
+                cursor: pointer;
+            }
+            div{
+                border: 0px;
+                border-radius: 10px;
+                width: 800px;
+                height: 540px;
+                margin-left: 250px;
+                margin-top: 20px;
+                background-image: linear-gradient(to bottom,rgb(229, 206, 182),rgb(254, 189, 109));
+                padding-top: 30px;
+                opacity: 0.9;
+            }
+            body{
+                background-image: url("images/eb.jpg");
+            }
+            #t3{
+                font-size: 25px;
+            }
+            .o1{
+                height: 47px;
+                width:300px;
+                border-radius: 10px;
+            }
+            h1{
+                font-size: 40px;
+                font-family: inherit;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <!-- <div id="div1">
+           <center><b1>Electricity Bill</b1></center> 
+        </div> -->
+        <div>
+            <center>
+                <h1>Electricity Bill</h1>
+                <table  id="t3"  cellspacing="30px">
+                    <tr>
+                        <td> Billers in india:</td>
+                        <td>
+                              <select class="o1" id="s1">
+    
+                                <option>MSEDC Mahavitaran</option>
+                                <option>Tata power</option>
+                                <option>Goa electricity Department</option>
+                                <option>BEST Mumbai</option>
+                                <option>Jaipur Vidyut Vitaran Nigam Ltd</option>
+                                <option>Punjab State Power Corporation</option>
+                                <option>Sikkim power</option>
+                                <option>Torrent power</option>
+                                <option>West Bengal Electricity</option>
+                                <option>Nuclear Power Corporation of India.</option>
+                                <option>PowerGrid Corporation of India.</option>
+                                <option>NHPC Limited.</option>
+                                <option>NTPC Limited.</option>
+                                <option>Power System Operation Corporation.</option>
+                                <option>Neyveli Lignite Corporation.</option>
+                                <option>Damodar Valley Corporation.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Consumer Number:</td>
+                        <td><input type="text" id="t1" class="o1" placeholder="Consumer Number" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Sub Divion Code:</td>
+                        <td><input type="text" id="t2"  class="o1" placeholder="Sub Divion Code" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Select Payment Method:</td>
+                        <td>
+                            <select selected class="o1" id="s2" disabled>
+                                <option>Card Payment</option>
+                                <option>UPI Payment</option>
+                                <option>Net Banking</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                       <td colspan="2"><center><button id="btn" onclick="mainpage()" disabled>CONFIRM</button></td>
+                       </tr></center>
+                </table>
+            </center>
+        </div>
+    </body>
+</html>

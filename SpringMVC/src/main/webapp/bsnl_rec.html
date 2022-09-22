@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="plansmo.js"></script>
+    <style>
+      .rectable {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="rectable">
+      <thead>
+        <tr>
+          <th>plan type</th>
+          <th>Data</th>
+          <th>Validity</th>
+          <th>Description</th>
+          <th>price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Recharge</td>
+          <td>1GB/Day</td>
+          <td>28 Days</td>
+          <td>
+            unlimited voice calls + Unlimited Data with <br />
+            speed reduced to 80 Kbps after 1GB/Day + <br />
+            100 SMS/day+ PRBT + Haryanady Games <br />
+            service for 28 days
+          </td>
+          <td>
+            <button id="price99" class="tabrecbtn" onclick="passvalue186();">
+              Rs 186
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Recharge</td>
+          <td>2 GB</td>
+          <td>110 Days</td>
+          <td>
+            Unlimited Voice Calls + Unlimited Data <br />
+            (speed restricted to 40 Kbps after 2GB/day) + <br />
+            100 SMS/day for 110 days + PRBT+ZING+Haryanady Games
+          </td>
+          <td>
+            <button id="price170" class="tabrecbtn" onclick="passvalue666();">
+              Rs 666
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Recharge</td>
+          <td>200 MB</td>
+          <td>28 Days</td>
+          <td>
+            Get unlimited SMS score alerts for on-going <br />
+            cricket match along with News, Jokes, Love & <br />
+            Shayari sms content for 30 days.
+          </td>
+          <td>
+            <button id="price599" class="tabrecbtn" onclick="passvalue99();">
+              Rs 99
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Recharge</td>
+          <td>1 GB</td>
+          <td>1 Days</td>
+          <td>
+            Get 1 GB for 1 Day | <br />
+            No Service Validity
+          </td>
+          <td>
+            <button id="price599" class="tabrecbtn" onclick="passvalue19();">
+              Rs 19
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script>
+    function passvalue186() {
+      console.log("button is cliked");
+      localStorage.setItem("textvalue", 186);
+      return false;
+    }
+    function passvalue666() {
+      console.log("button is cliked");
+      localStorage.setItem("textvalue", 666);
+      return false;
+    }
+    function passvalue99() {
+      console.log("button is cliked");
+      localStorage.setItem("textvalue", 99);
+      return false;
+    }
+    function passvalue19() {
+      console.log("button is cliked");
+      localStorage.setItem("textvalue", 19);
+      return false;
+    }
+  </script>
+</html>
