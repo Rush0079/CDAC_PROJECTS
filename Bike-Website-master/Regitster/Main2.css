@@ -1,0 +1,154 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url('Image/bike3.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    font-family: 'Baloo Bhai 2',cursive;
+}
+
+.left{
+    position: absolute;
+    display: inline-block;
+    color: white;
+    top: 28px;
+    width: 2    22px;
+    left: 39px;
+}
+
+#tex{
+    position: absolute;
+    left: -93%;
+    width: 190px;
+}
+
+.mid{
+    display: block;
+    width: 37%;
+    margin: 29px auto;
+    /* border: 2px solid green; */
+}
+
+.right{
+    position: absolute;
+    right: 34px;
+    top: 41px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+}
+
+.navbar{
+    display: inline-block;
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 20px;    
+}
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 13px 11px;
+
+}
+
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: yellowgreen;
+
+}
+
+.left img{
+    width: 60px;
+    filter: invert(100%);
+    left: 9px;
+    position: relative  ;
+}
+
+.left div{
+    text-align: center;
+}
+
+.btn{
+    font-family: 'Baloo Bhai 2',cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 5px 14px;
+    border-radius: 21px;
+    cursor: pointer;
+    /* Standard syntax */
+    width: 114;
+    border: 2px 2px;
+}
+
+.btn1 {
+    background-color: var(--background-color);
+    color: white;
+    padding: .5em 1em;
+    border: 2px;
+    border-color: orange;   
+    outline: 2px;
+    position: relative;
+    cursor: pointer;
+  
+    /* --background-color: #E3E3E3; */
+    --border-size: 2px;
+    --accent-color: blueviolet;
+  }
+
+.btn1.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+  
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .btn1.btn:hover::before,
+  .btn1.btn:focus::before {
+    transform: scaleX(1);
+  }
+
+.container{
+    border : 2px solid white;
+    margin : 106px 80px;
+    padding: 75px;
+    border-radius: 28px;
+    border-color: white;
+    width: 37%;
+}
+.form-group input{
+    font-family: 'Baloo Bhai 2',cursive;
+    text-align: center;
+    display: block;
+    width: 64%;
+    padding: 6px;
+    margin: 25px auto;
+    border-radius: 12px;
+    font-size:18px;
+}
+.form-group input[type="text"]:focus,.form-group input[type="text"]:focus
+.container h1{
+    text-align: center;
+}
+
+.container button{
+    display: block;
+    width: 23%;
+    margin:auto;
+
+}
+
+.material-icons 
+{
+    vertical-align:-14%
+}

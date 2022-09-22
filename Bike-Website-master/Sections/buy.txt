@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" href="buy.css" type="text/css" >
+    <script src="buy.js"></script>
+   
+   
+</head>
+
+<body>
+    
+    
+    
+    <!-- <img src="Image/Salesperson.png" > -->
+    <h1>WELCOME TO SALES !!!</h1>
+    <div class="main" style="padding: 0px 387px;">   
+        
+    <form  id="fields">
+       
+        <div class="flname">
+            <p>First Name: </p>
+            <input type="text" name="fname" id="fna" placeholder="Enter First Name Here">
+        </div>
+        
+        <div class="flname">
+            <p>Last Name: </p>
+            <input type="text" name="lname" id="lna" placeholder="Enter Last Name Here">
+       </div>
+       
+        
+        <div class="pmail">
+            <p>Phone number: </p>
+            <input type="text" name="Number" id="num" placeholder="Enter valid phone number">
+        </div>
+
+        <div>
+            <p>Email:</p>
+            <input type="email" name="eml" id="mail" placeholder="example@example.com">
+        </div>
+
+        <div>
+            <p>Purchase Date:</p>
+           <input type="date" name="Date" id="dt">
+         </div>
+
+        
+        <!-- <div>
+            Cost: <input type="text" id="book" placeholder="Enter in Rupees">
+        </div> -->
+        
+        <div class="proof">
+         
+        <div class="proof">
+        <p>ID Proof:</p>
+        <input type="file" id="idp" name="iproof">
+        </div>
+
+        
+        <div>
+        <p>Passport Photo</p>
+        <input type="file" id="photo" name="passphoto">
+
+        </div>
+        
+        
+        <div class="resub">
+
+            <input type="Reset" id="res" value="Reset">
+            <input type="submit" id="sub" value="Submit" onclick="validate()">
+        </div> 
+            
+        
+        
+        <!-- <div>
+           <p> Enter Amount to be paid:</p> 
+           <input type="text" id="book" placeholder="Enter amount in Rupees">
+        </div> -->
+        
+        
+        
+        <!-- <div class="pay">  
+            <p>Select Payment Method:</p>   
+                          
+                 <input type="radio" name="Payment_Method" id="card">
+                 <lable for="card">Card</lable>
+                 <input type="radio" name="Payment_Method" id="upi">
+                 <lable for="upi">UPI</lable>
+                 <input type="radio" name="Payment_Method" id="nb">
+                 <lable for="NB">Net Banking</lable>
+         </div>
+        
+         <div>
+            <input type="button" id="by" value="Buy">
+        </div> -->
+     
+</div>
+ 
+</form>
+</div>
+    
+</body>
+</html>

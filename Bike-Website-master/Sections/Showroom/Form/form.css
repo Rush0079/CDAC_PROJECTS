@@ -1,0 +1,178 @@
+
+*{
+    margin:0px;
+    padding:0px;
+}
+/*body{
+    background: url("Image/Background1.jpg");
+    background-size: 100%;
+    opacity: 0.75;
+    
+    background-position: -400px 0px;
+    
+}*/
+body{
+
+      background-image: url('Image/backg.jpg');
+      background-size: cover;
+      position:relative;
+      font-size: 50px;
+      top: -50px;
+      right: 0px;
+      bottom: px;
+      left: -100px;
+      opacity: 0.75;
+      padding-block: 20px;
+      margin-top: 72px;
+      position: absolute;
+      margin-left: 545px;
+}
+
+h1{
+    padding-bottom: 30px;
+}
+
+div.main{
+   
+    width: 350px;
+    margin: 100px auto 0px auto;
+}
+
+
+ 
+div.Booking{
+    background-color:rgba(0,0,0,0.5);
+    width: 150%;
+    font-size: 18px;
+    padding-left: 80px;
+    
+  
+    box-shadow:2px 2px 15px rgba(0,0,0,0.3); 
+    color:#fff;
+}
+
+/* #fields div input{
+    margin: 15px;
+    padding: 9px;
+    padding-left: 30px;
+    border-radius: 10px;
+
+}
+
+#fields div input[type="text"] :focus{
+    width: 300px;
+    background: chocolate;
+} */
+    
+
+#fields div input[type="text"], #fields div input[type="number"], #fields div input[type="email"]
+{
+
+background: none;
+
+margin: 15px  auto;
+
+border:3px solid #0367fd;
+padding:9px;
+width:220px;
+
+color: white;
+border-radius: 10px;
+transition:0.25px;
+}
+
+#fields div input[type="text"]:focus{
+
+width:270px;
+border-color: #ffc400ec;
+
+}
+
+div {
+    display: inline-block;
+}
+
+div p{
+    display: block;
+}
+
+#dt{
+    background: none;
+
+    margin: 15px  auto;
+    
+    border:3px solid #0367fd;
+    padding:9px;
+    width:220px;
+    border-radius: 7px;
+
+}
+
+#idp{
+    background: none;
+
+    margin: 15px  auto;
+    
+    border:3px solid #0367fd;
+    padding:9px;
+    width:220px;
+    border-radius: 7px;
+}
+
+.res{
+    font-family: 'Baloo Bhai 2',cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 5px 14px;
+    border-radius: 21px;
+    cursor: pointer;
+    /* Standard syntax */
+    width: 114;
+    border: 2px 2px;
+}
+
+.res{
+    background-color: var(--background-color);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    border-color: orange;
+    outline: 2px;
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    left: 110px;
+}
+/* .res{
+    
+    position: relative;
+    left: 120px;
+    top: 0px;
+    padding: 8px 30px;
+    background-color:red;
+    border-radius: 8px;
+    cursor:pointer;
+    
+} */
+.res::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+  
+   
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .res:hover::before,
+  .res:focus::before {
+    transform: scaleX(1);
+  }

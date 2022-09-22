@@ -1,0 +1,143 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    overflow-x: hidden;
+    /* overflow: hidden;  */
+    background-image: url('Image/bike.png');
+    background-size: cover;
+    position:relative;
+    
+      
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    
+  }
+
+  
+div.main{
+   
+
+    
+    /* width: 200px; */
+    margin: 100px auto 0px auto;
+    margin-top: 20px;
+    
+    
+    background-color:rgba(0,0,0,0.5);
+    width: 60%;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 505px;
+    /* left:400px; */
+  
+    
+  
+    box-shadow:2px 2px 15px rgba(0,0,0,0.3); 
+    color:#fff;
+}
+
+#fields div input[type="text"], #fields div input[type="number"],
+ #fields div input[type="email"],#fields div input[type="date"],
+ #fields div input[type="file"]
+
+{
+
+background:none;
+
+margin: 15px  auto;
+
+border:3px solid #0367fd;
+padding: 9px;
+width:220px;
+
+color: white;
+border-radius: 10px;
+transition:0.25px;
+}
+
+h1{
+    
+    padding-left: 450px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.flname{
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+
+.pmail {
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+
+.proof{
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+
+
+/* #num{
+    margin-right: 10px;
+}
+
+.pmail{
+    margin-bottom: 10px;
+}
+
+#dt{
+    margin-left:10px;
+    margin-bottom: 20px;
+}
+
+.proof{
+    
+    padding-inline: 40px;
+   
+    margin-bottom: 30px;
+} */
+
+div {
+
+   
+    display: inline-block;
+}
+
+div #fields{
+    
+    display: block;
+}
+
+.resub{
+    
+    padding-inline: 175px;
+    margin-bottom: 10px;
+}
+
+#res{
+    padding: 10px 20px;
+    background-color:antiquewhite;
+    
+    border-radius: 21px;
+}
+
+#res :hover{
+    color: aquamarine;
+}
+#sub{
+    padding: 10px 20px;
+    background-color:antiquewhite;
+    border-radius: 21px;
+}
+
+
+
+

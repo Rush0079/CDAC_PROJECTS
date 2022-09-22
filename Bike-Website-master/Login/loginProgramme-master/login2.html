@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lan="en" and dir="Itr">
+<head>
+    <meta charset="utf-8">
+    <title> Interactive Login Form</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- <script src ="login2.js"> </script> -->
+
+<script>
+    function login1()
+        {
+            console.log("button click");
+            var ema=document.getElementById("username").value;
+            var pa=document.getElementById("password").value;
+
+            var emailC=localStorage.getItem("name1");
+            var passC=localStorage.getItem("pass");
+
+            if(ema==emailC && pa==passC )
+            {
+                location.href="https://www.google.com/";
+            }
+            else if(ema=="admin"&& pa=="admin")
+            {
+                location.href="https://www.google.com/";
+            }
+            else{
+            alert("wrong informatiln");
+            }
+
+        }
+
+</script>
+
+</head>
+<body>
+<form class="box" action="../../Main.html" method="POST">
+
+<h1>
+    login
+</h1>
+<input type="text" name="" placeholder="Enter Username" id="username">
+<input type="password" name="" placeholder="Enter Password" id="password">
+<a href="http://127.0.0.1:5501/Main.html"><input type="submit" name="" value="Login"  onclick="validate()" id="btn"></a>
+
+<div class="mid">
+    <ul class="navbar">
+        <li><a href="http://127.0.0.1:5501/Regitster/Main2.html"  class="active" style="color: white; position: absolute; top: 10px;
+            left: 146px;">Sign-Up</a> </li>
+    </ul>
+</div>
+
+</form>
+
+
+</body>
+
+
+
+</html>

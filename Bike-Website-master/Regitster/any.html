@@ -1,0 +1,86 @@
+<body>
+    <header class="header">
+       
+        <div class="left">
+            <img src="Image/download.png" alt="">
+            <div id="tex"">Bike Showrooom</div>
+        </div>
+       
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5501/Main.html">Home</a> </li>
+                <li><a href="#"> About Us</a></li>
+                <li><a href="#">Fitness-Calculator</a> </li>
+                <li><a href="#">Contact us</a> </li>
+            </ul>
+        </div>
+        
+        <div class="right">
+            <button class="btn1 btn">Call Us</button>
+            <button class="btn1 btn">Email Us</button>
+            <i class="material-icons"> Home</i>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1 style="color: white;">Join the best GYM of Pune Now</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name" id="name1">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age" id="age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender" id="gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality" id="loc">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Username" id="username1">
+            </div>
+            <div class="form-group">
+                <input type="password" name="" placeholder="Enter Your Password" id="password1">
+            </div>
+            <input type="submit" class="btn" onclick="signup()">
+        </form>
+    </div>
+    <script>
+        function signup(){v
+            var name1=document.getElementById("name1").value;
+            var age=document.getElementById("age").value;
+            var gender=document.getElementById("gender").value;
+            var loc=document.getElementById("loc").value;
+            var username1=document.getElementById("username1").value;
+            var password1=document.getElementById("password1").value;
+
+            localStorage.setItem("name2",name1);
+            localStorage.setItem("age1",age);
+            localStorage.setItem("gender1",gender);
+            localStorage.setItem("loc1",loc);
+            localStorage.setItem("username2",username1);
+            localStorage.setItem("password2",password1);
+        }
+
+         function login1()
+    {
+        console.log("button clicked");
+        var ema=document.getElementById("login").value;
+        var pa=document.getElementById("logpass").value;
+
+        var emailC=localStorage.getItem("name1");
+        var passC=localStorage.getItem("pass");
+
+        if(ema==emailC && pa==passC)
+        {
+            window.location.href="home.html";
+        }
+        else{
+        alert("wrong informatiln");
+        }
+
+    }
+    </script>
+</body>
+</html>

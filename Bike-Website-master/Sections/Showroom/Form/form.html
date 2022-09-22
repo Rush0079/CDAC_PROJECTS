@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <link rel="stylesheet" href="form.css" type="text/css" >
+    <!-- <script>
+    
+         function validate()
+        {
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+        if(username=="admin"&& password=="user")
+        {
+            alert("login succesfully");
+            return false;
+        
+        }
+        else
+        {
+            alert("login failed");
+        }
+        
+        
+        }
+        </script> -->
+</head>
+<body>
+   
+    <!-- <i class="fas fa-home" style="color:blanchedalmond" >Home</i> -->
+    <div class="main">
+    <div class="Booking">
+        <h1 style="color:aliceblue">Book our Upcoming Launch</h1>
+    <form action="booking.php" id="fields">
+        <div>
+           <p>First Name:</p>
+           <input type="text" name="fname" id="fna" placeholder="Enter First Name Here">
+        </div>
+        
+        <div>
+            <p>Last Name:</p>
+            <input type="text" name="lname" id="lna" placeholder="Enter Last Name Here">
+        </div>
+        
+        <div>
+          <p>Phone Number:</p>
+          <input type="number" name="Number" id="num" placeholder="Enter valid phone number">
+        </div>
+        
+        <div>
+            <p>Email:</p>
+            <input type="email" id="mail" placeholder="example@example.com">
+        </div>
+        
+        <div>
+            <p>Booking Amount:</p>
+             <input type="text" id="book" placeholder="Enter amount in Rupees">
+        </div>
+
+        <div>
+        <p>ID Proof:</p>
+        <input type="file" id="idp" name="iproof">
+         </div>
+        
+        <div>
+           <p>Booking Date: </p>
+           <input type="date" name="Date" id="dt">
+        </div>
+        
+        <div>
+            <p>Address:</p>
+            <input type="text" name="add" id="house" placeholder="Address">
+            <!-- <input type="text" name="add" id="Str" placeholder="Street/Landmark.">
+            <input type="text" name="add" id="city" placeholder="Enter your City">
+            <input type="text" name="add" id="State" placeholder="Enter your State.">
+            
+         -->
+        
+        </div>
+        
+           <span>
+                <input type="Reset" class="res" value="Reset">
+                <!-- <input type="submit" id="sub" placeholder="Book"> -->
+                <input type="button" class="res" value="Book" >
+            </span>
+        </div>
+        
+    </form>  
+    </div>
+    </div>
+    
+    
+</body>
+</html>
